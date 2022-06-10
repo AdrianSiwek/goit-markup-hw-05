@@ -613,3 +613,7 @@ background-color: #ffffff;
   cursor: pointer;
 }
 
+.is-hidden .modal {
+    transform: translate(-100%);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
