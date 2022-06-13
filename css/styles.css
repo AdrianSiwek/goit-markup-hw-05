@@ -107,9 +107,13 @@ body {
   fill: #afb1b8;
 }
 
+.a .links .underline {
+  position: relative;
+}
+
 .links {
   text-decoration: none;
-  transition-property: color, background-color, box-shadow;;
+  transition-property: color, background-color, box-shadow;
   color: var(--text-main-color);
   transition: var(--transition);
 }
@@ -126,10 +130,10 @@ body {
   content: "";
   display: block;
   position: relative;
-  border-top: 4px solid var(--brand-main-color);
+  border-top: 4px solid var(--brand-mlight-color);
   border-radius: 2px;
-  margin-bottom: -4px;
-  top: 27px;
+  width: 100%;
+  bottom: -28px;
   left: 0;
 }
 
@@ -564,11 +568,10 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-
 }
 
 .offer-photo {
-  position:relative;
+  position: relative;
   margin-bottom: 30px;
   max-width: 370px;
   max-height: 404px;
@@ -577,18 +580,20 @@ footer {
   border: 0px;
   overflow: hidden;
   cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: box-shadow;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 
-.offer-photo > img{
-  object-fit: cover;}
+.offer-photo > img {
+  object-fit: cover;
+}
 
 .offer-photo:hover .overlay {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .describe {
+  z-index: 1002;
   position: absolute;
   top: 0;
   left: 0;
@@ -611,10 +616,12 @@ footer {
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
+
   color: #ffffff;
 }
 
 .offer-discription {
+  z-index: 1001;
   margin-top: -6px;
   list-style: none;
   border-left: 1px solid #eeeeee;
@@ -627,7 +634,6 @@ footer {
 .offer-photo:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .offer-name {
