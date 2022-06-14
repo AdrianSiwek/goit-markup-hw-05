@@ -570,7 +570,12 @@ footer {
   list-style: none;
 }
 
+.photoimg{
+  position:relative;
+}
+
 .offer-photo {
+  z-index: 1;
   position: relative;
   margin-bottom: 30px;
   max-width: 370px;
@@ -588,12 +593,15 @@ footer {
   object-fit: cover;
 }
 
-.offer-photo:hover .overlay {
+.img{
+  position:relative;}
+
+.offer-photo:hover .describe {
   transform: translateY(0);
 }
 
 .describe {
-  z-index: 1002;
+  z-index: 998;
   position: absolute;
   top: 0;
   left: 0;
@@ -621,7 +629,13 @@ footer {
 }
 
 .offer-discription {
-  z-index: 1001;
+  z-index: 999;
+  width: 322px;
+  height:70px;
+  left:0;
+  top:0;
+  background-color: #ffffff;
+  position: absolute;
   margin-top: -6px;
   list-style: none;
   border-left: 1px solid #eeeeee;
